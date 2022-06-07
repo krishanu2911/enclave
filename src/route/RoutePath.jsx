@@ -1,8 +1,18 @@
 import React from "react";
-import { User, Feed, Profile, Bookmark, Login, Signup, Explore, Error } from "../pages/index";
+import {
+  User,
+  Feed,
+  Profile,
+  Bookmark,
+  Login,
+  Signup,
+  Explore,
+  Error,
+} from "../pages/index";
 import { Route, Routes } from "react-router-dom";
 function RoutePath() {
-  return <Routes>
+  return (
+    <Routes>
       <Route path="/" element={<Feed />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/bookmark" element={<Bookmark />} />
@@ -11,6 +21,7 @@ function RoutePath() {
       <Route path="*" element={<Error />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
-  </Routes>;
+    </Routes>
+  );
 }
 export { RoutePath };
