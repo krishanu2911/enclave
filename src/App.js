@@ -1,9 +1,9 @@
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>Enclave</h1>
+      <h1 className="text-3xl font-bold underline">Enclave</h1>
     </div>
   );
 }
